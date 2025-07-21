@@ -10,9 +10,9 @@ namespace BattleshipLiteLibrary.Models
     {
         public string UsersName { get; set; }
 
-        public List<GridSpotModel> ShipLocation = new List<GridSpotModel>();
+        public List<GridSpotModel> ShipLocation { get; set; } = new List<GridSpotModel>();
 
-        public List<GridSpotModel> ShotGrid = new List<GridSpotModel>();
+        public List<GridSpotModel> ShotGrid { get; set; } = new List<GridSpotModel>();
 
     }
 }

@@ -9,6 +9,16 @@ namespace BattleshipLiteLibrary
 {
     public static class GameLogic
     {
+        public static object GetShotCount(PlayerInfoModel winner)
+        {
+            throw new NotImplementedException();
+        }
+
+        public static bool IdentifyShotResult(PlayerInfoModel opponent, string row, int column)
+        {
+            throw new NotImplementedException();
+        }
+
         //  passing in, model, passing back void? no passing.
         // instantiated object, so class instances , we dont actually pass the copy of them around, just address
         public static void InitializeGrid(PlayerInfoModel model)
@@ -40,7 +50,27 @@ namespace BattleshipLiteLibrary
             }
         }
 
+        public static void MarkShotResult(PlayerInfoModel activePlayer, string row, int column, bool isAHit)
+        {
+            throw new NotImplementedException();
+        }
+
         public static bool PlaceShip(PlayerInfoModel model, string location)
+        {
+            throw new NotImplementedException();
+        }
+
+        public static bool PlayerStillActive(PlayerInfoModel opponent)
+        {
+            throw new NotImplementedException();
+        }
+
+        public static (string row, int column) SplitShotIntoRowAndColumn(string shot)
+        {
+            throw new NotImplementedException();
+        }
+
+        public static bool ValidateShot(PlayerInfoModel activePlayer, string row, int column)
         {
             throw new NotImplementedException();
         }
